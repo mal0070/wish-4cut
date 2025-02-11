@@ -1,0 +1,10 @@
+.title {
+  font-size: 2rem;
+  color: var(--nct-color);
+}
+
+.buttonContainer {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}

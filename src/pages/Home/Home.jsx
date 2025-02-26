@@ -1,5 +1,5 @@
 import styles from './Home.module.scss';
-import Button from '../../components/Button/Button';
+import { Button } from '../../components';
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
       <h1 className={styles.title}>NCT WISH 4-CUT</h1>
       <div className={styles.buttonContainer}>
         {members.map((member) => (
-          <Button key={member} text={member.name} onClick={() => nav(`/frame/${member.id}`)} />
+          <Button key={member.id} text={member.name} onClick={() => nav(`/frame/${member.id}`)} />
         ))}
       </div>
     </div>

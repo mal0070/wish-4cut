@@ -5,7 +5,7 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/frame/:id' element={<Frame />} />
+      <Route path='/frame/:id' element={<Frame/>} />
       <Route path='/shoot' element={<Shoot/>}/>
       <Route path='/save' element={<Save/>} />
       <Route path='*' element={<NotFound/>} />
